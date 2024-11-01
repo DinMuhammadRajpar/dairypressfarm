@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Press</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/stylesheet.css">
+
+    <link rel="stylesheet" href="style/media.css">
+
+    <script src="https://kit.fontawesome.com/24c82a992a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="top_header">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- <div class="top_navbar"> -->
+                    <div class="top_header_leftSide">
+                        <div class="email_div_top_header">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@webmail.com</span>
+                        </div>
+                        <div class="phone_div_top_header">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>000 123 456 789</span>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="top_header_socialMedia_icons">
+
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-behance"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <ul class="">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+
+
+        <div id="navbar_nav">
+
+
+
+
+            <!-- top navigation menu -->
+            <div class="top_logoToggleBtn_div" id="toggle_btn">
+                <div class="row">
+
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="logo" id="logo_main">
+                            <a href="">
+                                <img src="assets/logo.png" alt="logo" id="logo_img">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-8 navbar_col">
+                        <nav class="navbar">
+                            <!-- <div class="navbar_div"> -->
+                            <ul class="navbar_items">
+                                <li class="dropdown">
+                                    <a href="gallery.html">Home <i class="fa-solid fa-plus"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>Home Style 1</li>
+                                        <li>Home Style 2</li>
+                                        <li>Home Style 3</li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>TEAM</li>
+                                        <li>TEAM DETAILS</li>
+                                        <li>GALERY/li>
+                                        <li>FAQ</li>
+                                        <li>SHOP</li>
+                                        <li>PRODUCT DETAILS</li>
+                                        <li>WISHLIST</li>
+                                        <li>CART</li>
+                                        <li>CHECKOUT</li>
+                                        <li>LOGIN</li>
+                                        <li>REGISTER</li>
+                                        <li>404 Page</li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="active" href="service-cards.html">Services <i class="fa-solid fa-plus"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>SERVICE</li>
+                                        <li>SERVICE DETAILS</li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">News <i class="fa-solid fa-plus"></i></a>
+                                    <ul class="dropdown_menu">
+                                        <li>NEWS</li>
+                                        <li>NEWS DETAILS</li>
+                                        <li>GRID LAYOUT 1</li>
+                                        <li>GRID LAYOUT 2</li>
+                                        <li>GRID LAYOUT 3</li>
+                                        <li>GRID LAYOUT 4</li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- </div> -->
+                        </nav>
+                    </div>
+
+
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="btns_div">
+
+                            <button class="cart_btn">
+                                <img src="assets/cart-icon.png" alt="">
+                            </button>
+                            <button class="toggle-btn">
+                                <img src="assets/hamburger-icon.png" alt="">
+                            </button>
+
+                            <!-- <div class="cart_btn">&#9776;</div>
+                        <div class="toggle-btn">&#9776;</div> -->
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!-- toggle menu with toggle button -->
+
+            <div class="overlay"></div>
+            <div class="sidebar">
+
+                <div class="sidebar-header">
+                    <div class="sidebar_logo">
+                        <img src="assets/logo-2.png" alt="logo 2">
+                    </div>
+                    <div class="toggle-btn-sidebar">
+                        <div class="toggleBtn_icon_div">
+
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_div">
+                    <form action="#">
+                        <input type="text" placeholder="What are you searching for?">
+                        <button class="submit_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="sidebar_nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="space_div">
+
+                </div>
+                <div class="row sidebar_imgs_row">
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/06.jpg">
+                                <img src="assets/06.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/07.jpg">
+                                <img src="assets/07.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/08.jpg">
+                                <img src="assets/08.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/09.jpg">
+                                <img src="assets/09.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/10.jpg">
+                                <img src="assets/10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="slider_img_div"><a data-fancybox="gallery" href="assets/01.jpg">
+                                <img src="assets/01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact_info_sec">
+                    <h4>contact info</h4>
+
+                    <ul>
+                        <li class="d-flex align-items-center">
+                            <div class="contact_info_li_icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact_info_li_text">
+                                <a href="#">12/A, Mirnada City Tower, NYC</a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="contact_info_li_icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact_info_li_text">
+                                <a href="#">+058885565544</a>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="contact_info_li_icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="contact_info_li_text">
+                                <a href="#">support@mail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="sidebar_socialMedia_icons_bottom">
+                    <div class="socialMedia_icon_bottom">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                    </div>
+                    <div class="socialMedia_icon_bottom">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                    </div>
+                    <div class="socialMedia_icon_bottom">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                    <div class="socialMedia_icon_bottom">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- toggle cart sidebar with toggle button  -->
+
+            <div class="overlay_cart"></div>
+            <div class="sidebar_cart">
+
+
+                <div class="sidebar_cart_header">
+                    <div class="cart_heading_div">
+                        <h5>SHOPPING CART</h5>
+                    </div>
+                    <div class="cart_header_btn_div">
+                        <button class="cart_btn_sidebar_cart">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </div>
+
+                    <!-- <div class="cart_btn_sidebar_cart">&#9776;</div> -->
+                </div>
+
+
+                <div class="cart_sidebar_ul_div">
+                    <ul>
+                        <li class="cart_product_list-div">
+                            <div class="cart_product_img">
+                                <a href="#"><img src="assets/quick-view-01.png" alt=""></a>
+                            </div>
+                            <div class="cart_product_detail_div">
+                                <div class="cart_product_heading">
+                                    <h5>SWEET MILK CREAM</h5>
+                                </div>
+                                <div class="cart_quantity_div">
+                                    <span class="cart_negative_quantity">-</span>
+                                    <input type="text" name="" id="cart_inputField" value="1">
+                                    <span class="cart_positive_quantity">+</span>
+                                </div>
+                                <div class="cart_product_totalPrice">
+                                    <span>$46.0</span>
+                                </div>
+                            </div>
+                            <div class="cart_product_list_cross">
+                                <i class="fa-solid fa-x fa-xs"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="cart_product_list-div">
+                            <div class="cart_product_img">
+                                <a href="#"><img src="assets/quick-view-02.png" alt=""></a>
+                            </div>
+                            <div class="cart_product_detail_div">
+                                <div class="cart_product_heading">
+                                    <h5>pure 1000ml milk</h5>
+                                </div>
+                                <div class="cart_quantity_div">
+                                    <span class="cart_negative_quantity">-</span>
+                                    <input type="text" name="" id="cart_inputField" value="1">
+                                    <span class="cart_positive_quantity">+</span>
+                                </div>
+                                <div class="cart_product_totalPrice">
+                                    <span>$32.0</span>
+                                </div>
+                            </div>
+                            <div class="cart_product_list_cross">
+                                <i class="fa-solid fa-x fa-xs"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="cart_product_list-div">
+                            <div class="cart_product_img">
+                                <a href="#"><img src="assets/quick-view-03.png" alt=""></a>
+                            </div>
+                            <div class="cart_product_detail_div">
+                                <div class="cart_product_heading">
+                                    <h5>mikado cheese bar</h5>
+                                </div>
+                                <div class="cart_quantity_div">
+                                    <span class="cart_negative_quantity">-</span>
+                                    <input type="text" name="" id="cart_inputField" value="1">
+                                    <span class="cart_positive_quantity">+</span>
+                                </div>
+                                <div class="cart_product_totalPrice">
+                                    <span>$62.0</span>
+                                </div>
+                            </div>
+                            <div class="cart_product_list_cross">
+                                <i class="fa-solid fa-x fa-xs"></i>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <div class="cart_bottom_total_div">
+                        <div class="bottom_heading-total_div">
+                            <h4>SUBTOTAL:</h4>
+                            <span id="endTotal">$113.00</span>
+                        </div>
+                        <div class="cart_bottom_btns">
+                            <a href="" class="cart_bottom_viewCart_btn">VIEW CART</a>
+                            <a href="" class="cart_bottom_checkout_btn">CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading_div text-center">
+                    <span>Services</span>
+                    <h1>WHAT WE PROVIDE</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card_body">
+                        <div class="cardImg_div">
+                            <img src="assets/service-01.jpg" alt="">
+                        </div>
+                        <div class="card_bottom_text">
+                            <h2>FRESH MILK AND MEAT</h2>
+                            <h5>SERVICE DETAILS</h5>
+
+                            <div class="box_div">
+                                <span>
+                                    <img src="assets/service_card-1.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overlay_card">
+                        <div class="box_div">
+                            <span>
+                                <img src="assets/service_card-1.png" alt="">
+                            </span>
+                            
+                        </div>
+                        <div class="overlay_card_text">
+                            <h3 class="text-white">FRESH MILK AND MEAT</h3>
+                            <p class="text-white">A content farm is a company that employs to large numbers quality.</p>
+
+                            <h5>SERVICE DETAILS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card_body">
+                        <div class="cardImg_div">
+                            <img src="assets/service-02.jpg" alt="">
+                        </div>
+                        <div class="card_bottom_text">
+                            <h2>FRESH MILK AND MEAT</h2>
+                            <h5>SERVICE DETAILS</h5>
+
+                            <div class="box_div">
+                                <span>
+                                    <img src="assets/service_card-2.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overlay_card">
+                        <div class="box_div">
+                            <span>
+                                <img src="assets/service_card-2.png" alt="">
+                            </span>
+                            
+                        </div>
+                        <div class="overlay_card_text">
+                            <h3 class="text-white">FRESH MILK AND MEAT</h3>
+                            <p class="text-white">A content farm is a company that employs to large numbers quality.</p>
+
+                            <h5>SERVICE DETAILS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card_body">
+                        <div class="cardImg_div">
+                            <img src="assets/service-03.jpg" alt="" class="cardImg">
+                        </div>
+                        <div class="card_bottom_text">
+                            <h2>FRESH MILK AND MEAT</h2>
+                            <h5>SERVICE DETAILS</h5>
+
+                            <div class="box_div">
+                                <span>
+                                    <img src="assets/service_card-3.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overlay_card">
+                        <div class="box_div">
+                            <span>
+                                <img src="assets/service_card-3.png" alt="">
+                            </span>
+                            
+                        </div>
+                        <div class="overlay_card_text">
+                            <h3 class="text-white">FRESH MILK AND MEAT</h3>
+                            <p class="text-white">A content farm is a company that employs to large numbers quality.</p>
+
+                            <h5>SERVICE DETAILS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service_btn text-center">
+            <a href="">MORE PRODUCTS</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <section class="footer_section">
+            <div class="bg_footer_img">
+                <img src="assets/footer-bg.png" alt="">
+            </div>
+
+            <div class="container">
+
+                <div class="upperSide_container_div">
+                    <div class="row">
+
+                        <div class="col-lx-3 col-lg-3">
+
+                            <div class="footer_aboutUs_container">
+
+                                <div class="footer_headings">
+                                    <h3 class="text-white">about us</h3>
+                                </div>
+                                <div class="aboutUs_footer_para">
+                                    <p>A farm is a plot of land that is used to
+                                        grow crops and raise livestock, as in
+                                        our farm, we raise sheep and sell their
+                                        wool. The word farm is also used as a
+                                        verb to mean to work land.</p>
+                                </div>
+                                <div class="footer_socialMedia_icons">
+                                    <a href=""><i class="fa-brands fa-2x fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-2x fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-2x fa-square-behance"></i></a>
+                                    <a href=""><i class="fa-brands fa-2x fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lx-3 col-lg-3">
+
+                            <div class="footer_services_container">
+
+                                <div class="footer_headings">
+                                    <h3>services</h3>
+                                </div>
+
+                                <div class="footer_services_list">
+                                    <ul>
+                                        <li><a href="">agriculture foods</a></li>
+                                        <li><a href="">Organic Vegetables</a></li>
+                                        <li><a href="">Pond & Sea Fish</a></li>
+                                        <li><a href="">Cow Milk & Meat</a></li>
+                                        <li><a href="">House Hold</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                        <li><a href="">Natural </a></li>
+                                        <li><a href="">Organic Food </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lx-3 col-lg-3">
+
+                            <div class="footer_businessHours_container">
+
+                                <div class="footer_headings">
+                                    <h3>business hourse</h3>
+                                </div>
+
+                                <div class="businessHours_container_body">
+                                    <div class="businessHours_timings_data">
+                                        <span>Mon - Fri</span>
+                                        <p>10:00 am to 06:00 pm</p>
+                                    </div>
+                                    <div class="businessHours_timings_data">
+                                        <span>saturday (1st & 4th)</span>
+                                        <p>08:00 am to 04:00 pm</p>
+                                    </div>
+                                    <div class="businessHours_bottomDiv">
+                                        <div class="businessHours_bottomDiv_imgNtext">
+                                            <div>
+                                                <img src="assets/footer-text.png" alt="">
+                                            </div>
+                                            <div class="emergencyNnumber">
+                                                <span>emergency service</span>
+                                                <a href="#">000 111 222 33</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                            <div>
+                                <div class="footer_headings">
+                                    <h3>subscribe us</h3>
+                                </div>
+
+                                <div class="footer_subscribeNow_div">
+                                    <p>Subscribe us & recive our office
+                                        & update in your inbox directly</p>
+
+                                    <form action="#">
+                                        <div class="subscribe_Email_inputField">
+                                            <input type="text" placeholder="info@webmail.com">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+
+                                        <div class="subscribe_now_btn">
+                                            <a href="">subscribe now</a>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="copyright_main_div">
+                            <div class="copyright_border_div">
+                                <div class="copyright_div">
+                                    <p>copyright design by DMR Technology - 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+    <script>
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            let increaseButtons = document.querySelectorAll('.cart_positive_quantity');
+            let decreaseButtons = document.querySelectorAll('.cart_negative_quantity');
+            let inputField = document.querySelectorAll('.cart_quantity_div input');
+            let endTotal = document.getElementById('endTotal');
+            const totalPriceSpans = document.querySelectorAll('.cart_product_totalPrice span');
+            const itemPrice = [46.0, 32.0, 62.0];
+
+
+            let cross_exit = document.querySelectorAll('.cart_product_list_cross');
+            let list_div = document.querySelectorAll('cart_product_list-div');
+
+
+            increaseButtons.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+                    // console.log(increaseButtons);
+                    // console.log(button);
+                    // console.log(index);
+                    inputField[index].value = parseInt(inputField[index].value) + 1;
+                    increase_updateTotalPrice(index);
+                    updateEndTotal();
+                })
+            })
+            decreaseButtons.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+
+                    if (parseInt(inputField[index].value) >= 1) {
+                        inputField[index].value = parseInt(inputField[index].value) - 1;
+                        decrease_updateTotalPrice(index);
+                        updateEndTotal();
+                    }
+                })
+            })
+
+
+
+
+            function increase_updateTotalPrice(index) {
+                const quantity = parseInt(inputField[index].value);
+                const unitPrice = parseFloat(totalPriceSpans[index].textContent.slice(1));
+                let totalPrice = quantity * itemPrice[index];
+                totalPriceSpans[index].textContent = `$${totalPrice.toFixed(2)}`;
+            }
+
+            function decrease_updateTotalPrice(index) {
+                const quantity = parseInt(inputField[index].value);
+                const unitPrice = parseFloat(totalPriceSpans[index].textContent.slice(1));
+                let totalPrice = unitPrice - itemPrice[index];
+                // totalPrice = totalPrice - itemPrice[index];
+                // totalPrice = totalPrice - unitPrice;
+                totalPriceSpans[index].textContent = `$${totalPrice.toFixed(2)}`;
+            }
+
+            function updateEndTotal() {
+                let totalPrice = 0;
+                totalPriceSpans.forEach(function (span) {
+                    // console.log(span);
+                    totalPrice = totalPrice + parseFloat(span.textContent.slice(1));
+                });
+                endTotal.textContent = `$${totalPrice.toFixed(2)}`;
+            }
+
+            updateEndTotal();
+
+
+
+
+
+            cross_exit.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+                    // list_div.style.display = 'none';
+                    // let productDiv = button.parentElement;
+                    // productDiv.style.display = 'none';
+
+
+                    list_div = button.parentElement;
+                    // list_div.style.display = 'none';
+
+                    list_div.style.transform = 'translateX(100%)';
+                    list_div.style.opacity = '0';
+                    setTimeout(function () {
+                        list_div.style.display = 'none';
+                        updateEndTotal();
+                    }, 300);
+                })
+            })
+
+
+
+        });
+
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.animated_slider');
+            let slides = document.querySelectorAll('.animated_slide');
+            let texts = document.querySelectorAll('.text');
+            let index = 0; // Start with the first slide
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i == index) {
+                        slide.style.opacity = 1; // Show the current slide
+                        setTimeout(() => {
+                            texts[i].style.opacity = 1; // Show the text with delay
+                            texts[i].style.bottom = '20px'; // Adjust text position
+                        }, 500); // Delay text animation
+                    } else {
+                        slide.style.opacity = 0; // Hide other slides
+                        texts[i].style.opacity = 0; // Hide other texts
+                        texts[i].style.bottom = '-40px'; // Reset text position
+                    }
+                });
+            }
+
+            function nextSlide() {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }
+
+            setInterval(nextSlide, 3000); // Change slide every 8 seconds
+        });
+
+
+    </script>
+
+    <script>
+
+        window.addEventListener('scroll', function desktopFunc() {
+
+            let navbar = document.getElementById('navbar_nav');
+            let logo = document.getElementById('logo_main')
+            let logo_img = document.getElementById('logo_img')
+            let toggleBtn = document.getElementById('toggle_btn')
+
+            if (window.pageYOffset >= 195) {
+                navbar.classList.add('sticky')
+                logo.classList.add('logo_sticky')
+                logo_img.classList.add('logo_img')
+                logo.classList.remove('logo')
+                if (window.matchMedia("(max-width: 999px)").matches) {
+                    toggleBtn.style.backgroundColor = "#5b8c51";
+                }
+            }
+            else {
+                navbar.classList.remove('sticky')
+                logo.classList.remove('logo_sticky')
+                logo_img.classList.remove('logo_img')
+                logo.classList.add('logo')
+                if (window.matchMedia("(max-width: 999px)").matches) {
+                    toggleBtn.style.backgroundColor = "white";
+                }
+            }
+        })
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel-basic').owlCarousel({
+                margin: 0,
+                loop: true,
+                autoplay: true,
+                item: 4,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    200: {
+                        items: 2
+                    },
+                    400: {
+                        items: 3,
+                        nav: false,
+                        margin: 50
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+
+            $('.owl-carousel-center').owlCarousel({
+                autoplay: true,
+                center: true,
+                margin: 15,
+                autoplayTimeout: 2000,
+                loop: true,
+                nav: false,
+                items: 1,
+            })
+
+            $('.owl-carousel-single').owlCarousel({
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: false,
+                animateOut: 'fadeOut',
+                // animateIn: 'fadeIn',
+                loop: true,
+                nav: false,
+                items: 1,
+
+            })
+        });
+
+
+    </script>
+
+    <script>
+
+        let currentSlide = 0;
+        let sliding = false;
+
+        function showSlide(slideIndex) {
+            if (sliding) return;
+            sliding = true;
+
+            const sliderContent = document.querySelector('.slider_content');
+            sliderContent.style.transition = 'transform 0.5s ease-in-out';
+            sliderContent.style.transform = `translateX(-${slideIndex * 25}%)`;
+
+            currentSlide = slideIndex;
+
+            setTimeout(() => {
+                sliding = false;
+            }, 500);
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % 4;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + 4) % 4;
+            showSlide(currentSlide);
+        }
+
+
+        function startAutoSlider() {
+            if (window.innerWidth <= 767) {
+                return; // Do nothing on mobile devices
+            }
+
+            setInterval(nextSlide, 2000); // Move to next slide every 2 seconds
+        }
+
+
+
+        startAutoSlider();
+
+
+
+
+        // navbar javasrcript
+
+
+
+
+        document.querySelector('.toggle-btn').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.add('show-sidebar');
+            document.querySelector('.overlay').classList.add('show-overlay');
+        });
+
+        document.querySelector('.overlay').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.remove('show-sidebar');
+            document.querySelector('.overlay').classList.remove('show-overlay');
+        });
+
+        document.querySelector('.toggle-btn-sidebar').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.remove('show-sidebar');
+            document.querySelector('.overlay').classList.remove('show-overlay');
+        });
+
+
+
+
+
+        document.querySelector('.cart_btn').addEventListener('click', function () {
+            document.querySelector('.sidebar_cart').classList.add('show-sidebar_cart');
+            document.querySelector('.overlay_cart').classList.add('show-overlay_cart');
+        });
+
+        document.querySelector('.overlay_cart').addEventListener('click', function () {
+            document.querySelector('.sidebar_cart').classList.remove('show-sidebar_cart');
+            document.querySelector('.overlay_cart').classList.remove('show-overlay_cart');
+        });
+
+        document.querySelector('.cart_btn_sidebar_cart').addEventListener('click', function () {
+            document.querySelector('.sidebar_cart').classList.remove('show-sidebar_cart');
+            document.querySelector('.overlay_cart').classList.remove('show-overlay_cart');
+        });
+
+    </script>
+
+
+</body>
+
+</html>
